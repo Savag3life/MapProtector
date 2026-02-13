@@ -1,0 +1,14 @@
+main: not.savage.signed.SignedMaps
+authors: [ Savage ]
+description: Protect map art from being copied.
+version: 1.0.0
+api-version: 1.21
+name: SignedMaps
+
+commands:
+  sign-map-reload:
+    description: Reload signed maps plugin config.
+  sign-map:
+    description: Sign a map.
+  signature-info:
+    description: Get info about a signed map.
