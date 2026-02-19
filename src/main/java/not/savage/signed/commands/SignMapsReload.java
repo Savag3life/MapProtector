@@ -16,7 +16,7 @@ public record SignMapsReload(SignedMaps plugin) implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
-        if (!sender.hasPermission("signed.sign")) {
+        if (!sender.hasPermission("signed.sign-map-reload")) {
             sender.sendMessage(KyoriString.of(plugin.getConfig().getString("messages.no_permission")).color());
             return true;
         }
